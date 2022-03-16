@@ -11,3 +11,93 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.header{
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.dark-mode{
+  background-color: black;
+}
+.dark-mode h1{
+  color: white;
+}
+.container{
+  max-width: 960px;
+  margin-top: 20px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  min-height: 100vh ;
+}
+
+
+.notes-list{
+  display: grid; 
+  grid: gap 1rem;
+  grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+}
+
+
+.note{
+  background-color: yellow;
+  margin-bottom: 20px;
+  padding: 1rem; 
+  border-radius: 10px;
+  min-height: 170px;
+  margin-right: 20px;
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+  white-space: pre-wrap;
+  
+}
+ 
+.note-footer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.note.new{
+  background-color: aqua;
+}
+textarea{
+  background-color: aqua;
+  border: none;
+  resize: none;
+}
+textarea:focus{
+  outline: none;
+}
+.delete-icon{
+  cursor: pointer;
+}
+
+.search{
+  display:flex;
+  align-items: center;
+background-color: rgb(231, 228, 228);
+border-radius: 10px;
+padding:5px;
+width:97%;
+margin-bottom: 2em;
+
+}
+
+.search input{
+  border: none;
+  background-color:rgb(231, 228, 228) ;
+  
+}
+input:focus{
+  outline: none;
+}
+
+.save{
+  border-radius: 10px;
+  cursor: pointer;
+}
